@@ -3,41 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <title>CV - Sony Jason Allccarima Muñico</title>
+
+    <!-- FUENTE CODER -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1 id="nombre">Sony Jason Allccarima Muñico</h1>
-    <p>Ingeniería de Software | Full Stack Developer | Data Engineer</p>
+    <h1 id="typing"></h1>
+
+    <p>
+        Ingeniería de Software | Full Stack Developer | Data Engineer
+    </p>
+
+    <p class="status">
+        🚧 En formación activa como desarrollador de software |
+        Construyendo proyectos reales en backend, frontend y datos
+    </p>
 </header>
 
 <nav>
     <a href="#sobre">Sobre mí</a>
-    <a href="#experiencia">Experiencia</a>
+    <a href="#educacion">Educación</a>
     <a href="#proyectos">Proyectos</a>
+    <a href="#skills">Skills</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
+<!-- SOBRE MI -->
 <section id="sobre">
     <h2>Sobre mí</h2>
-    <p id="resumen"></p>
+
+    <p>
+        Soy estudiante de Ingeniería de Software con enfoque en desarrollo Full Stack
+        y análisis de datos.
+    </p>
+
+    <p>
+        Actualmente me encuentro en fase de entrenamiento activo, desarrollando proyectos
+        personales para fortalecer habilidades en backend, frontend y bases de datos.
+    </p>
+
+    <p>
+        Mi objetivo es consolidarme como desarrollador capaz de construir sistemas
+        escalables y orientados a datos.
+    </p>
 </section>
 
-<section id="experiencia">
-    <h2>Experiencia</h2>
-    <div id="exp"></div>
+<!-- EDUCACION -->
+<section id="educacion">
+    <h2>Educación</h2>
+
+    <div class="timeline">
+        <div class="item">
+            <h3>Universidad Tecnológica del Perú (UTP)</h3>
+            <p>Ingeniería de Software</p>
+            <span>Abril 2023 - Actualmente</span>
+
+            <h3>Universidad Nacional de Ingeniería (UNI)</h3>
+            <p>Diplomado en Gerencia y Gestión de Proyectos</p>
+            <span>Febrero 2020 - Setiembre 2020</span>
+
+        </div>
+    </div>
 </section>
 
+<!-- PROYECTOS -->
 <section id="proyectos">
     <h2>Proyectos</h2>
-    <div id="proy"></div>
+
+    <div class="card">
+        <h3>CV Web Portfolio</h3>
+        <p>Frontend + backend + GitHub Pages</p>
+        <span>Estado: En desarrollo</span>
+    </div>
+
+    <div class="card">
+        <h3>Sistema de gestión SQL</h3>
+        <p>Base de datos + consultas + modelado</p>
+        <span>Estado: En planificación</span>
+    </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Competencias técnicas</h2>
+
+    <p>Java (POO, Swing)</p>
+    <div class="bar"><div class="fill java"></div></div>
+
+    <p>SQL Server</p>
+    <div class="bar"><div class="fill sql"></div></div>
+
+    <p>HTML / CSS</p>
+    <div class="bar"><div class="fill html"></div></div>
+
+    <p>Git / GitHub</p>
+    <div class="bar"><div class="fill git"></div></div>
+
+    <p>Visual Studio Code / NetBeans</p>
+    <div class="bar"><div class="fill vsc"></div></div>
+
+</section>
+
+<!-- IDIOMAS -->
+<section>
+    <h2>Idiomas</h2>
+
+    <p>Inglés - Nivel B2 - ICPNA</p>
+    <div class="bar"><div class="fill ingles"></div></div>
+
+    <p>Portugués - Instituto Da Silva Cordeiro</p>
+    <div class="bar"><div class="fill portugues"></div></div>
+
+</section>
+
+<!-- SOFT SKILLS -->
+<section>
+    <h2>Habilidades interpersonales</h2>
+
+    <div class="tags">
+        <span>Analítico</span>
+        <span>Técnico</span>
+        <span>Metódico</span>
+        <span>Orientado en solución de problemas</span>
+        <span>Persistente</span>
+        <span>Detallista</span>
+        <span>Pragmático</span>
+        <span>Curioso</span>
+        <span>Estructurado</span>
+        <span>Resolutivo</span>
+        <span>Autodidacta</span>
+    </div>
+</section>
+
+<!-- INFORMACIÓN ADICIONAL -->
+<section>
+    <h2>Información adicional</h2>
+
+    <span class="badge">✔ Licencia de conducir: A1</span>
+    <span class="badge">✔ Movilidad propia (previa coordinación) </span>
+    <span class="badge">✔ Disponibilidad para viajar</span>
+    <span class="badge">✔ Adaptabilidad para trabajo en campo y/o altura</span>
+    <span class="badge">✔ Conocimientos en normas de seguridad industrial (SST)</span>
+    <span class="badge">✔ Manejo de software de diseño mecánico (Autocad, Inventor, Solidworks, Ansys, Fusion360)</span>
+    <span class="badge">✔ Residencia actual: 📍 Los Olivos, Lima, Perú</span>
+</section>
+
+<!-- CONTACTO -->
 <section id="contacto">
     <h2>Contacto</h2>
     <p>Email: jasonny24@gmail.com</p>
+    <p>Celular: +51 994 318 823</p>
 </section>
 
 <script src="script.js"></script>
