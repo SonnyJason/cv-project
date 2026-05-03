@@ -115,11 +115,7 @@ h2 {
     transition: width 1.2s ease;
 }
 
-.mysql { width: 50%; }
-.db { width: 50%; }
-.data { width: 50%; }
-.ingles { width: 75%; }
-.portugues { width: 50%; }
+
 
 /* TAGS */
 .tags {
@@ -149,3 +145,257 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+
+.exp-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.exp-list li {
+    margin-bottom: 8px;
+    color: #c9d1d9;
+    line-height: 1.5;
+}
+
+.terminal {
+    background: #0b0f14;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* HEADER tipo terminal */
+.terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #161b22;
+    padding: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+    margin-left: 10px;
+    color: #8b949e;
+    font-size: 12px;
+}
+
+/* BODY */
+.terminal-body {
+    padding: 15px;
+    font-family: 'Fira Code', monospace;
+}
+
+.cmd {
+    color: #58a6ff;
+    margin: 10px 0 0;
+}
+
+.output {
+    color: #c9d1d9;
+    margin: 2px 0 10px;
+}
+
+/* LISTA */
+.terminal {
+    background: #0b0f14;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* HEADER tipo terminal */
+.terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #161b22;
+    padding: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+    margin-left: 10px;
+    color: #8b949e;
+    font-size: 12px;
+}
+
+/* BODY */
+.terminal-body {
+    padding: 20px;
+}
+
+/* mejora visual de tu contenido */
+.terminal-body h3 {
+    color: #58a6ff;
+}
+
+.terminal-body p,
+.terminal-body span,
+.exp-list li {
+    color: #c9d1d9;
+}
+
+/* lista estilo dev */
+.exp-list {
+    padding-left: 20px;
+}
+
+.exp-list li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.exp-list li::before {
+    content: "▹";
+    color: #58a6ff;
+    position: absolute;
+    left: -15px;
+}
+
+@media print {
+
+    /* MANTENER FONDO OSCURO */
+    body {
+        background: #0d1117 !important;
+        color: #e6edf3 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* ELIMINAR ANIMACIONES */
+    section {
+        opacity: 1 !important;
+        transform: none !important;
+        page-break-inside: avoid;
+    }
+
+    /* FORZAR PÁGINA 1 Y 2 */
+
+    #sobre {
+        page-break-after: always;
+    }
+
+    #experiencia {
+        page-break-after: always;
+    }
+
+    /* NAV NO SE IMPRIME */
+    nav {
+        display: none !important;
+    }
+
+    /* EVITAR CORTES EN BLOQUES */
+    .card, .timeline, .item, .tags {
+        break-inside: avoid;
+    }
+
+    /* CONTROL GENERAL */
+    html, body {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    /* MARGENES PDF */
+    @page {
+        margin: 10mm;
+    }
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* TEXTO */
+.about-text {
+    flex: 1;
+}
+
+/* IMAGEN */
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.about-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+
+    transition: all 0.4s ease;
+}
+
+/* HOVER EFECTO */
+.about-img img:hover {
+    transform: scale(1.08) translateY(-5px);
+    
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.4),
+        0 0 25px rgba(88,166,255,0.6),
+        0 0 50px rgba(88,166,255,0.3);
+
+    border-color: #1f6feb;
+
+    outline: 3px solid rgba(88,166,255,0.5);
+    outline-offset: 5px;
+}
+

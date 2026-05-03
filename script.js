@@ -1,4 +1,4 @@
-// SCROLL ANIMATION
+// ANIMACIÓN DE SCROLL
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver(entries => {
@@ -27,7 +27,7 @@ function type() {
 type();
 
 
-// SKILL BARS ANIMATION
+// ANIMACIÓN DE BARRAS
 const bars = document.querySelectorAll(".fill");
 
 const barObserver = new IntersectionObserver(entries => {
@@ -48,12 +48,19 @@ const barObserver = new IntersectionObserver(entries => {
             if (entry.target.classList.contains("vsc")) {
                 entry.target.style.width = "35%";
             }
+            if (entry.target.classList.contains("pobi")) {
+                entry.target.style.width = "75%";f
+            }
+            if (entry.target.classList.contains("excel")) {
+                entry.target.style.width = "90%";f
+            }
             if (entry.target.classList.contains("ingles")) {
-                entry.target.style.width = "75%";
+                entry.target.style.width = "80%";
             }
             if (entry.target.classList.contains("portugues")) {
-                entry.target.style.width = "50%";
+                entry.target.style.width = "50%";f
             }
+            
         }
     });
 }, { threshold: 0.5 });
